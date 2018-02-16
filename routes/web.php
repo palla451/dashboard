@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin','AdminController@show')->middleware('auth')->name('admin');
+
+Route::get('/profile','UserProfileController@view')->middleware('auth')->name('profile');
