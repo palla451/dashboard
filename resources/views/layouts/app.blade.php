@@ -51,6 +51,10 @@
                                         @csrf
                                     </form>
 
+                                    <a class="dropdown-item" href="{{ route('profile') }}">
+                                     Profile
+                                    </a>
+
 
                                     @if(Auth::user()->role == 'admin')
                                     <a class="dropdown-item" href="{{ route('admin') }}">
