@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Policies;
+namespace app\Policies;
 
-use App\User;
+use app\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class UserProfilePolicy

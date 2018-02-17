@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace app\Http\Controllers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Auth;
@@ -14,6 +14,6 @@ class AdminController extends Controller
 
             return view('dashboard',compact('user'));
         }
-        return abort(403, 'Non sei autorizzato');
+        return abort(401, 'Non sei autorizzato');
     }
 }
