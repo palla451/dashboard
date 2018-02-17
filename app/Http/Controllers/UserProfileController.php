@@ -20,7 +20,7 @@ class UserProfileController extends Controller
         $userProfile = Auth::user();
 
         if($loggedUser->can('myprofile',$userProfile)){
-                return view('userprofile',compact('loggedUser'));
+            return view('userprofile',compact('loggedUser'));
         }
         return abort('403','Non sei autorizzato');
 
